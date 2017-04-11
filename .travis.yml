@@ -1,0 +1,13 @@
+language: c
+
+sudo: required
+
+before_install: 
+ - sudo apt-get update -qq
+ - sudo apt-get install -qq subversion bison gawk make gcc g++ xz-utils libxml2-utils xsltproc docbook2x libncurses5-dev texinfo git uuid-dev autoconf unionfs-fuse squashfs-tools genisoimage syslinux-utils dosfstools
+ - sudo useradd -D lfs
+ - sudo usermod -aG sudo lfs
+
+script:
+ - ./GoboALFS ./GoboLinux
+

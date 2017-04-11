@@ -10,5 +10,5 @@ before_install:
 
 script:
  - mkdir -p ./GoboLinux
- - ./GoboALFS ./GoboLinux
+ - ./GoboALFS --batch ./GoboLinux
 

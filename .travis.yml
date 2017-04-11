@@ -9,5 +9,6 @@ before_install:
  - sudo usermod -aG sudo lfs
 
 script:
+ - mkdir -p ./GoboLinux
  - ./GoboALFS ./GoboLinux
 
